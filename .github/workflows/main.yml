@@ -44,7 +44,7 @@ jobs:
         # Yarn command
         cmd: install
     - name: create build
-      run: npm run build
+      run: yarn run build
 
     - name: deploy on surge
       run: surge ./build http://bootcamp-2020_class-3.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
