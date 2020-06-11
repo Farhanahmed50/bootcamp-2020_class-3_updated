@@ -33,8 +33,10 @@ jobs:
         # Yarn command
         cmd: install
     
-    - name: Creating Build
-      run: yarn build
+   # - name: Creating Build
+   #   run: yarn build
+    - name: Build Yarn and npm
+      uses: linchpin/action-build-yarn-npm@master
     
     - name: Installing Surge
       run: npm install -g surge
